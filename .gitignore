@@ -1,0 +1,4 @@
+*.swp
+*.un~
+*.sublime-project
+_site/

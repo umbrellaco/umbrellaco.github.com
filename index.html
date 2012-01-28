@@ -1,0 +1,88 @@
+---
+layout: base
+---
+<nav class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav">
+                <li class="active"><a href="#masthead">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <!-- <li><a href="#blog">Blog</a></li> -->
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header id="masthead">
+    <div class="row">
+        <h1>
+            <a href="/">The Umbrella Corporation</a>
+        </h1>
+        <div class="bullet">
+            <h2>Hi! We are <strong>Umbrella</strong>.</h2>
+            <p>We make delightful products for the web and the world.</p>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section class="pagesection" id="products">
+        <h1>Products</h1>
+        <section class="product" id="skills">
+            <h1>Skills</h1>
+            <a href="http://skillsapp.com" class="productlink framedimage">
+                <img src="/static/img/skills_logo.png" alt="Skills Logo">
+            </a>
+        </section>
+    </section>
+
+<!--     <section class="pagesection" id="blog">
+        <h1>Blog</h1>
+    </section> -->
+
+    <section class="pagesection" id="team">
+        <h1>Team</h1>
+        <article id="david" class="person">
+            <div class="avatar">
+                <img class="framedimage" width=200 height=200 src="/static/img/david.jpg">
+            </div>
+            <div class="persontext">
+                <h1>David</h1>
+                <p>In 1995, David independently discovered the phishing attack while bored in a 7th grade computer class. After hacking his way into the school's Novell network he proceeded to print out next week's Physics exam and stapled it to the school bulletin board.</p>
+                <p>Anyways. Fast forward 16 years, and David runs two small and awesome software companies. They're totally legit. We swear.</p>
+                <ul>
+                    <li>twitter <a href="http://twitter.com/intent/user?screen_name=_dkatz">@_dkatz</a></li>
+                    <li>email <a href="mailto:david@umbrella.io">david@umbrella.io</a></li>
+                </ul>
+            </div>
+        </article>
+        <article id="idan" class="person">
+            <div class="avatar">
+                <img class="framedimage" width=200 height=200 src="/static/img/idan.jpg">
+            </div>
+            <div class="persontext">
+                <h1>Idan</h1>
+                <p>Developer, designer, djangonaut, geek: Idan digs things at the intersection of code and design. He satisfies both sides of his personality in his role as a <a href="http://djangoproject.com">Django</a> core contributor, and hearts all things related to interaction design, extracting meaning from data, and pretty pixels.
+
+                <p>Idan lives in Tel Aviv with a very understanding wife and a feisty 2-year-old daughter.</p>
+                <ul>
+                    <li>twitter <a href="http://twitter.com/intent/user?screen_name=idangazit">@idangazit</a></li>
+                    <li>email <a href="mailto:idan@umbrella.io">idan@umbrella.io</a></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+</div>
+
+
+<!-- <section class="blog">
+    <h1>Posts</h1>
+    {% for post in site.posts %}
+        <article class="index">
+            <time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date_to_string }}</time>
+            <header><a href="{{ post.url }}">{{ post.title }}</a></header>
+        </article>
+    {% endfor %}
+</section>
+ -->
+
