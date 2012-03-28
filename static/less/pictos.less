@@ -1,28 +1,12 @@
-// @font-face {
-//     font-family: 'Pictos';
-//     src: url('../fonts/pictos-web.woff') format('woff'),
-//          url('../fonts/pictos-web.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
 @font-face {
     font-family: 'Pictos';
-    src: url('../fonts/pictos-web.eot');
-    src: local('☺'), url('../fonts/pictos-web.woff') format('woff'), url('../fonts/pictos-web.ttf') format('truetype'), url('../fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
+    src: url('../fonts/pictos-web.woff') format('woff'),
+         url('../fonts/pictos-web.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-// @font-face {
-//     font-family: 'Fico';
-//     src: url('../fonts/fico-web.woff') format('woff'),
-//          url('../fonts/fico-web.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-.icon, .fico, .pictos {
+.icon,  .pictos {
     &:before {
         content: attr(data-icon);
         font-weight: normal !important;
@@ -30,12 +14,6 @@
         text-rendering: optimizeLegibility;
     }
 }
-
-// .fico {
-//     &:before {
-//         font-family: "Fico";
-//     }
-// }
 
 .icon, .pictos {
     &:before {
