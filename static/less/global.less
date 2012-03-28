@@ -35,7 +35,7 @@ a {
     }
     h1 {
         font-size: 1em;
-        font-weight: @weight-light;
+        .display;
         margin-top: 2.75em;
         margin-bottom: 0;
         padding: 0;
@@ -105,7 +105,7 @@ a {
     h1 {
         font-size: 1.25em;
         color: @red;
-        font-weight: @weight-light;
+        .display;
     }
     h2 {
         font-size: 0.8em;
@@ -132,7 +132,7 @@ a {
         display: block;
         position: relative;
         overflow: hidden;
-        background: @skills-red url(../img/skills_textured_bg.png) left top repeat;
+        background: @skills-red url(../img/dotted_pattern.png) left top repeat;
         text-align: center;
         padding-top: 2em;
         text-decoration: none;
@@ -201,6 +201,7 @@ a {
     text-transform: uppercase;
 
     .tile {
+        .display;
         .transition(all, 0.2s, ease);
         .box-shadow(0 2px 0 0 #bbb);
         border: 1px solid rgba(255,255,255,0);
@@ -208,9 +209,10 @@ a {
             .box-shadow(~"0 0 12px 2px @{highlight-blue}, 0 2px 0 0 #bbb");
             border-color: rgba(255,255,255,0.5);
         }
-        background: desaturate(@purple, 80%);
+        background: desaturate(@purple, 80%) url(../img/dotted_pattern.png) repeat;
         &:hover {
             color: white;
+            background-color: lighten(@purple, 15%);
         }
         .icon {
             margin-right: 0.25em;
@@ -221,28 +223,15 @@ a {
         }
     }
 
-    .blog:hover {
-        background: lighten(@purple, 15%);
-    }
-    .about:hover {
-        background: @red;
-    }
-    .email:hover {
-        background: @red;
-    }
-    .twitter:hover {
-        background: @red;
-    }
-
-
     .blog, .about {
-        font-size: 0.8em;
-        height: 11.25em;
-        line-height: 11.25em;
+        font-size: 1em;
+        height: 9em;
+        line-height: 9em;
         text-align: center;
         color: rgba(255,255,255,0.8);
         text-decoration: none;
         text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+        letter-spacing: 1px;
     }
 
     .contact {
@@ -251,15 +240,15 @@ a {
             margin: 0;
             padding: 0;
             text-align: center;
-            font-size: 0.8em;
-            line-height: 5em;
+            font-size: 1em;
+            line-height: 4em;
             &:first-child {
-                margin-bottom: 1.25em;
+                margin-bottom: 1em;
             }
         }
         a {
             display: block;
-            height: 5em;
+            height: 4em;
             // background: #aaa;
             color: rgba(255,255,255,0.8);
             text-decoration: none;
@@ -284,7 +273,7 @@ a {
             background: #eee;
         }
         h1 {
-            font-weight: @weight-light;
+            .display;
             font-size: 2em;
             margin: 0.5em 0;
         }
@@ -406,7 +395,7 @@ a {
             }
         }
         h1 {
-            font-weight: @weight-light;
+            .display;
             font-size: 1.5em;
             color: @red;
             margin-top: 0;
