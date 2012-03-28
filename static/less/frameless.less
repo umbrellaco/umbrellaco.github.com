@@ -1,0 +1,87 @@
+// Simplified Frameless
+// Based on Frameless by Joni Korpi <http://framelessgrid.com/>
+// licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+
+@font-size: 20;                 // Your base font-size in pixels
+@base-font-ems: @font-size / 16 * 1em;
+
+@em: @font-size;                // Shorthand for outputting ems
+
+@column: @font-size * 3;        // The column-width of your grid in pixels
+@gutter: @font-size * 1;        // The gutter-width of your grid in pixels
+
+@gutter-em: (@gutter / @em) * 1rem; // The gutter-width in ems.
+
+
+
+
+.columns(@columns:1) {
+    float: left;
+    width: (@columns * (@column + @gutter) - @gutter) / @em * 1rem;
+    margin-left: @gutter-em / 2;
+    margin-right: @gutter-em / 2;
+    // &:first-child {
+    //     margin-left: 0;
+    // }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+    // &:only-child {
+    //     margin-left: 0;
+    //     margin-right: 0;
+    // }
+}
+
+.padleft(@columns:1) {
+    margin-left: ((@columns * (@column + @gutter)) / @em * 1rem) + (@gutter-em / 2);
+}
+
+.padright(@columns:1) {
+    margin-right: ((@columns * (@column + @gutter)) / @em * 1rem) + (@gutter-em / 2);
+}
+
+
+.grid(@columns:12) {
+    .clearfix;
+    width: (@columns * (@column + @gutter)) / @em * 1rem;
+    // padding-left: @gutter-em / 2;
+    // padding-right: @gutter-em / 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+
+.column-width(@cols:1) {
+    @return ($cols * ($column + $gutter) - $gutter) / $em * 1em;
+}
+
+
+
+@mixin cols($cols:1, $padleft:0, $padright:0, $manageMargins:true) {
+    float: left;
+    width: column-width($cols);
+    margin-right: $gutter-em / 2;
+    margin-left: $gutter-em / 2 ;
+    @if $padleft > 0 {
+        padding-left: column-width($padleft);
+    }
+    @if $padright > 0 {
+        padding-right: column-width($padright);
+    }
+    @if $manageMargins {
+
+    }
+}
+
+
+@mixin grid($cols:12, $pad:1) {
+    @include clearfix;
+    width: column-width($cols);
+    padding-left: $pad * $gutter-em;
+    padding-right: $pad * $gutter-em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*/
