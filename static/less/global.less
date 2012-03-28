@@ -209,9 +209,28 @@ a {
             .box-shadow(~"0 0 12px 2px @{highlight-blue}, 0 2px 0 0 #bbb");
             border-color: rgba(255,255,255,0.5);
         }
-        background: desaturate(@purple, 80%) url(../img/dotted_pattern.png) repeat;
+        @colortop: #444;
+        @colorbottom: #2a2a2a;
+        background: url(../img/dotted_pattern.png) repeat, -moz-linear-gradient(top,  @colortop 0%, @colorbottom 100%); /* FF3.6+ */
+        background: url(../img/dotted_pattern.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,@colortop), color-stop(100%, @colorbottom)), url(../img/dotted_pattern.png) repeat; /* Chrome,Safari4+ */
+        background: url(../img/dotted_pattern.png) repeat, -webkit-linear-gradient(top,  @colortop 0%, @colorbottom 100%), url(../img/dotted_pattern.png) repeat; /* Chrome10+,Safari5.1+ */
+        background: url(../img/dotted_pattern.png) repeat, -o-linear-gradient(top,  @colortop 0%, @colorbottom 100%), url(../img/dotted_pattern.png) repeat; /* Opera 11.10+ */
+        background: url(../img/dotted_pattern.png) repeat, -ms-linear-gradient(top,  @colortop 0%, @colorbottom 100%), url(../img/dotted_pattern.png) repeat; /* IE10+ */
+        background: url(../img/dotted_pattern.png) repeat, linear-gradient(top,  @colortop 0%, @colorbottom 100%), url(../img/dotted_pattern.png) repeat; /* W3C */
+
+
+        //background: desaturate(@purple, 80%) url(../img/dotted_pattern.png) repeat;
         &:hover {
             color: white;
+            @colortop: lighten(@purple, 20%);
+            @colorbottom: lighten(@purple, 10%);
+            background: url(../img/dotted_pattern.png) repeat, -moz-linear-gradient(top,  @colortop 0%, @colorbottom 100%); /* FF3.6+ */
+            background: url(../img/dotted_pattern.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,@colortop), color-stop(100%, @colorbottom)); /* Chrome,Safari4+ */
+            background: url(../img/dotted_pattern.png) repeat, -webkit-linear-gradient(top,  @colortop 0%, @colorbottom 100%); /* Chrome10+,Safari5.1+ */
+            background: url(../img/dotted_pattern.png) repeat, -o-linear-gradient(top,  @colortop 0%, @colorbottom 100%); /* Opera 11.10+ */
+            background: url(../img/dotted_pattern.png) repeat, -ms-linear-gradient(top,  @colortop 0%, @colorbottom 100%); /* IE10+ */
+            background: url(../img/dotted_pattern.png) repeat, linear-gradient(top,  @colortop 0%, @colorbottom 100%); /* W3C */
+
             background-color: lighten(@purple, 15%);
         }
         .icon {

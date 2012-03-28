@@ -823,7 +823,24 @@ a:hover {
   -moz-box-shadow: 0 2px 0 0 #bbbbbb;
   box-shadow: 0 2px 0 0 #bbbbbb;
   border: 1px solid rgba(255, 255, 255, 0);
-  background: #3c3c3c url(../img/dotted_pattern.png) repeat;
+  background: url(../img/dotted_pattern.png) repeat, -moz-linear-gradient(top, #444444 0%, #2a2a2a 100%);
+  /* FF3.6+ */
+
+  background: url(../img/dotted_pattern.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444444), color-stop(100%, #2a2a2a)), url(../img/dotted_pattern.png) repeat;
+  /* Chrome,Safari4+ */
+
+  background: url(../img/dotted_pattern.png) repeat, -webkit-linear-gradient(top, #444444 0%, #2a2a2a 100%), url(../img/dotted_pattern.png) repeat;
+  /* Chrome10+,Safari5.1+ */
+
+  background: url(../img/dotted_pattern.png) repeat, -o-linear-gradient(top, #444444 0%, #2a2a2a 100%), url(../img/dotted_pattern.png) repeat;
+  /* Opera 11.10+ */
+
+  background: url(../img/dotted_pattern.png) repeat, -ms-linear-gradient(top, #444444 0%, #2a2a2a 100%), url(../img/dotted_pattern.png) repeat;
+  /* IE10+ */
+
+  background: url(../img/dotted_pattern.png) repeat, linear-gradient(top, #444444 0%, #2a2a2a 100%), url(../img/dotted_pattern.png) repeat;
+  /* W3C */
+
 }
 .tiles .tile:hover {
   -webkit-box-shadow: 0 0 12px 2px #00a0b0, 0 2px 0 0 #bbb;
@@ -833,6 +850,24 @@ a:hover {
 }
 .tiles .tile:hover {
   color: white;
+  background: url(../img/dotted_pattern.png) repeat, -moz-linear-gradient(top, #9b4366 0%, #78334e 100%);
+  /* FF3.6+ */
+
+  background: url(../img/dotted_pattern.png) repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9b4366), color-stop(100%, #78334e));
+  /* Chrome,Safari4+ */
+
+  background: url(../img/dotted_pattern.png) repeat, -webkit-linear-gradient(top, #9b4366 0%, #78334e 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: url(../img/dotted_pattern.png) repeat, -o-linear-gradient(top, #9b4366 0%, #78334e 100%);
+  /* Opera 11.10+ */
+
+  background: url(../img/dotted_pattern.png) repeat, -ms-linear-gradient(top, #9b4366 0%, #78334e 100%);
+  /* IE10+ */
+
+  background: url(../img/dotted_pattern.png) repeat, linear-gradient(top, #9b4366 0%, #78334e 100%);
+  /* W3C */
+
   background-color: #8a3b5a;
 }
 .tiles .tile .icon {
