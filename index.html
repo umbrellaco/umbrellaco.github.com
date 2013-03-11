@@ -1,78 +1,57 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8" />
+	<title>Umbrella: we build insights</title>
+	<meta name="description" content="Umbrella is a data visualisation studio. We use a modern visualisation stack to build insights" />
+	<meta name="keywords" content="umbrella beautiful data visualization studio" />
+	<link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Umbrella is a data visualization studio.</h1>
+	<p>We help you figure out which questions you should be asking about your data, and build expressive, interactive visualizations that uncover answers.</p>
 
-<section class="headline">
-    <h1>We design products. Nice ones.</h1>
-</section>
+	<section class="featured">
+		<h2>Featured Work</h2>
+		<article>
+			<h1 class="hidden">Transparency International Israel</h1>
+			<img src="img/ti-logo.png">
+			<p><a href="http://transparency.org">Transparency International</a> fights corruption worldwide. They do it through measuring government transparency. They believe (and we agree) that more transparency means less opportunities for corruption.</p>
+			<p>They gave us an excel sheet containing their 2012 research on transparency in municipalities. We built <a href="http://ti-israel.org/muni-2012">a web-based brief</a> that visualizes data like <em>how easy is it to contact my mayor?</em> and <em>are municipal tenders available online?</em></p>
+			<p>The brief is in Hebrew, but feel free to use your favorite translation service and dig into it a little.</p>
+		</article>
+	</section>
 
-<article class="featured" id="product-skills">
-    <a href="http://skillsapp.com">
-        <h1>Skills</h1>
-        <h2><em>Resumes suck.</em> We did something about that.</h2>
-        <p class="learnmore">Show Me!</p>
-    </a>
-</article>
+	<section>
+		<h2>Team &amp; Tools</h2>
+		<p>Our tools are common sense, a strong background in science, and experience with state of the art web development.</p>
+		<p>Before talking with us, you should know who we are. We’re three web professionals. Collectively, we are Django core contributors, PyCon speakers, Google Startup Mentors, respected designers, passionate developers, and seasoned entrepreneurs.</p>
 
-<section class="tiles">
-    <a href="/blog" class="secondary tile blog"><span class="icon" data-icon='N'></span> Blog</a>
-    <a href="/about" class="secondary tile about"><span class="icon" data-icon='U'></span> About</a>
-    <div class="secondary contact">
-        <p><a href="http://twitter.com/intent/user?screen_name=umbrellaio" class="tile twitter"><span class="icon" data-icon='B'></span>umbrellaio</a></p>
-        <p><a href="mailto:hello@umbrella.io" class="tile email"><span class="icon" data-icon='M'></span>hello@umbrella.io</a></p>
-    </div>
-</section>
+		<p>Here’s us: <a href="http://gazit.me">Idan Gazit</a>, <a href="http://y3xz.com">Yuval Adam</a>, and <a href="http://davidkatz.me">David Katz</a></p>
+	</section>
 
+	<h2>We speak at</h2>
+	<img src="img/conference-grid.jpg">
 
+	<h2>Contact</h2>
+	<p>Tell us who you are, a bit about how we can help you, and we'll get in touch with some ideas.</p>
+	<p><a href="mailto:david@umbrella.io">david@umbrella.io</a></p>
 
+	<p class="copyright">&copy; Umbrella 2013. All rights reserved, but what would you do with this anyways?</p>
 
-<!--     <section class="pagesection" id="blog">
-        <h1>Blog</h1>
-    </section> -->
-<!--
-    <section class="pagesection" id="team">
-        <h1>Team</h1>
-        <article id="david" class="person">
-            <div class="avatar">
-                <img class="framedimage" width=200 height=200 src="/static/img/david.jpg">
-            </div>
-            <div class="persontext">
-                <h1>David</h1>
-                <p>In 1995, David independently discovered the phishing attack while bored in a 7th grade computer class. After hacking his way into the school's Novell network he proceeded to print out next week's Physics exam and stapled it to the school bulletin board.</p>
-                <p>Anyways. Fast forward 16 years, and David runs two small and awesome software companies. They're totally legit. We swear.</p>
-                <ul>
-                    <li>twitter <a href="http://twitter.com/intent/user?screen_name=_dkatz">@_dkatz</a></li>
-                    <li>email <a href="mailto:david@umbrella.io">david@umbrella.io</a></li>
-                </ul>
-            </div>
-        </article>
-        <article id="idan" class="person">
-            <div class="avatar">
-                <img class="framedimage" width=200 height=200 src="/static/img/idan.jpg">
-            </div>
-            <div class="persontext">
-                <h1>Idan</h1>
-                <p>Developer, designer, djangonaut, geek: Idan digs things at the intersection of code and design. He satisfies both sides of his personality in his role as a <a href="http://djangoproject.com">Django</a> core contributor, and hearts all things related to interaction design, extracting meaning from data, and pretty pixels.
-
-                <p>Idan lives in Tel Aviv with a very understanding wife and a feisty 2-year-old daughter.</p>
-                <ul>
-                    <li>twitter <a href="http://twitter.com/intent/user?screen_name=idangazit">@idangazit</a></li>
-                    <li>email <a href="mailto:idan@umbrella.io">idan@umbrella.io</a></li>
-                </ul>
-            </div>
-        </article>
-    </section>
-</div>
--->
-
-<!-- <section class="blog">
-    <h1>Posts</h1>
-    {% for post in site.posts %}
-        <article class="index">
-            <time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date_to_string }}</time>
-            <header><a href="{{ post.url }}">{{ post.title }}</a></header>
-        </article>
-    {% endfor %}
-</section>
- -->
-
+	<script type="text/javascript">
+	  var _gauges = _gauges || [];
+	  (function() {
+	    var t   = document.createElement('script');
+	    t.type  = 'text/javascript';
+	    t.async = true;
+	    t.id    = 'gauges-tracker';
+	    t.setAttribute('data-site-id', '4f210c13cb25bc3a30000001');
+	    t.src = '//secure.gaug.es/track.js';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(t, s);
+	  })();
+	</script>
+</body>
+</html>
